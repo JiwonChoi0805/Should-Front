@@ -4,16 +4,20 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import "../../fonts/Font.css";
 import axios from "axios";
-import { useLocation } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 import addimg from "../images/addimg.png";
 import editimg from "../images/editimg.png";
 
 const Complete = () => {
+    const navigate = useNavigate();
     const location = useLocation();
     const diaryData = location.state ? location.state.todayDiary : null;
     console.log({ diaryData });
 
+    const gotoCal = () => {
+        navigate("/calendar");
+    };
     return (
         <>
             <Wrapper>
@@ -28,7 +32,7 @@ const Complete = () => {
                     <div className="diary_content">{diaryData.content}</div>
                 </DiaryContainer>
                 <ButtonContainer>
-                    <AddBtn>
+                    <AddBtn onClick={gotoCal}>
                         <img src={addimg} />
                         <div className="tocalendar">달력에 추가할래요</div>
                     </AddBtn>
@@ -46,10 +50,12 @@ const Complete = () => {
 export default Complete;
 
 const Wrapper = styled.div`
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 1200px;
     position: absolute;
+    top: 0;
     left: 0;
+    bottom: 0;
     background-color: #e7e7e7;
     display: flex;
     flex-direction: column;
@@ -57,7 +63,7 @@ const Wrapper = styled.div`
 `;
 const KeywordContainer = styled.div`
     position: relative;
-    top: 14%;
+    top: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -81,7 +87,7 @@ const KeywordContainer = styled.div`
 
 const DiaryContainer = styled.div`
     position: relative;
-    top: 20%;
+    top: 15%;
     display: flex;
     flex-direction: column;
     width: 90%;
@@ -111,12 +117,13 @@ const DiaryContainer = styled.div`
 `;
 const ButtonContainer = styled.div`
     position: relative;
-    top: 25%;
+    top: 23%;
     width: 85%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 100px;
 `;
 const AddBtn = styled.div`
     border-radius: 20px;
