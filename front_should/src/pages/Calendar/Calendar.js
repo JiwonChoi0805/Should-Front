@@ -5,7 +5,8 @@ import styled, { createGlobalStyle } from "styled-components";
 import Header from "../../components/Header";
 import moment from "moment";
 import "./Calendar.css";
-
+import { useNavigate } from "react-router-dom";
+import Footer from "../../components/Footer";
 const GlobalStyle = createGlobalStyle`
   body {
     font-family: InknutAntiqua-Regular_t; 
@@ -15,7 +16,11 @@ const GlobalStyle = createGlobalStyle`
 const Calendar = () => {
     const { date } = useParams();
     const [selectedDate, setSelectedDate] = useState(moment());
+    const navigate = useNavigate();
 
+    const handleAllmyClick = () => {
+        navigate("/allmyrecordpage");
+    };
     const renderCalendar = () => {
         const monthStart = selectedDate.clone().startOf("month");
         const monthEnd = selectedDate.clone().endOf("month");
@@ -71,7 +76,7 @@ const Calendar = () => {
             <Background>
                 <div className="calendar-container">
                     <div className="calendar-footer">
-                        <button className="allmybutton">All my</button>
+                        <button className="allmybutton" onClick={handleAllmyClick}>All my</button>
                     </div>
                     <header className="calendar-header">
                         <button onClick={prevMonth}>Prev</button>
@@ -91,6 +96,7 @@ const Calendar = () => {
                         </div>
                         <div className="calendar-body">{renderCalendar()}</div>
                     </div>
+                    <Footer />
                 </div>
             </Background>
         </Wrapper>
