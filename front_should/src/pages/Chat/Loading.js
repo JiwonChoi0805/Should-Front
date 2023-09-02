@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import loading_background from "../images/loading_background.png";
 import loading_img from "../images/loading_img.png";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const Loading = () => {
+    const navigate = useNavigate();
+    // const [diaryData, setDiaryData] = useState("");
+    const location = useLocation();
+    const todayDiary = location.state ? location.state.todayDiary : null;
+
+    const gotoComplete = () => {
+        console.log({ todayDiary });
+        navigate("/complete", { state: { todayDiary } });
+    };
     return (
         <>
             <Wrapper>
@@ -15,7 +25,7 @@ const Loading = () => {
                         얼른 푹 쉬고 좋은 밤 되길 바라요🌃
                     </div>
                     <div className="ment2">펜촉이 가는 중입니다 💭✍️</div>
-                    <img src={loading_img} />
+                    <img onClick={gotoComplete} src={loading_img} />
                 </MentContainer>
             </Wrapper>
         </>

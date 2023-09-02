@@ -16,8 +16,8 @@ export default Userprofile;
 const Wrapper = styled.div`
     display: flex;
     flex-direction: row;
-    align-self: flex-end;
     margin-right: 15px;
+    margin-bottom: 10px;
     .userMessage {
         border-radius: 10px;
         border: 0.3px solid #aeaeae;

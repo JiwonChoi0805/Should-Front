@@ -20,8 +20,11 @@ const Wrapper = styled.div`
     flex-direction: row;
     width: 100%;
     align-items: center;
+    align-self: flex-start;
+    margin-bottom: 10px;
+
     img {
-        width: 57px;
+        width: 50px;
     }
     .aiMessage {
         background-color: white;
