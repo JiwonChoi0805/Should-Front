@@ -10,11 +10,11 @@ import addimg from "../images/addimg.png";
 import editimg from "../images/editimg.png";
 
 const Complete = () => {
-    const navigate = useNavigate();
     const location = useLocation();
     const diaryData = location.state ? location.state.todayDiary : null;
     console.log({ diaryData });
 
+    const navigate = useNavigate();
     const gotoCal = () => {
         navigate("/calendar");
     };
