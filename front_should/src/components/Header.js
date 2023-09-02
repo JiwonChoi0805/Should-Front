@@ -23,6 +23,7 @@ const Header = (props) => {
 export default Header;
 
 const HeaderWrapper = styled.div`
+
     width: 100vw;
     height: 11%;
     position: fixed;
@@ -36,3 +37,4 @@ const HeaderWrapper = styled.div`
         font-family: "Lemon";
     }
 `;
+

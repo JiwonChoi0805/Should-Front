@@ -41,6 +41,7 @@ const FooterWrapper = styled.div`
     height: 8%;
     position: fixed;
     bottom: 0;
+    left: 0;
     background-color: #1a2d4d;
     display: flex;
     justify-content: center;

@@ -23,6 +23,14 @@ const HomePage = () => {
     const gotoTasks = () => {
         navigate("/taskpage");
     };
+    const gotoAllrecord=()=>{
+        navigate("/allmyrecordpage");
+    };
+
+    const gotoPlant=()=>{
+        navigate("/plantpage");
+    }; 
+    
     return (
         <div className="home-page">
             <Wrapper>
@@ -37,7 +45,7 @@ const HomePage = () => {
                             <img onClick={gotoCalendar} src={mainCalendar} />
                         </div>
                         <div className="myplants">
-                            <img src={mainPlant} />
+                            <img onClick={gotoPlant} src={mainPlant} />
                         </div>
                     </Categories>
                     <Titles>
@@ -49,7 +57,7 @@ const HomePage = () => {
                             <img onClick={gotoChat} src={mainGochat} />
                         </div>
                         <div className="allmyrecords">
-                            <img src={mainRecord} />
+                            <img onClick={gotoAllrecord} src={mainRecord} />
                         </div>
                     </Categories>
                 </CategoryWrapper>
