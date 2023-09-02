@@ -26,9 +26,11 @@ const HomePage = () => {
     const gotoAllrecord=()=>{
         navigate("/allmyrecordpage");
     };
+
     const gotoPlant=()=>{
         navigate("/plantpage");
     }; 
+    
     return (
         <div className="home-page">
             <Wrapper>

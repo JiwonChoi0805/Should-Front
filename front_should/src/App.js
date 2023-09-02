@@ -14,7 +14,8 @@ import StartChatDaPage from "./pages/StartChatda/StartChatDaPage";
 import SelectSignUpPage from "./pages/SelectSignUpPage/SelectSignUpPage";
 import KakaoSignUpPage from "./pages/KakaoSignupPage/KakaoSignUpPage";
 import AllMyRecordPage from "./pages/AllMyRecordPage";
-import PlantPage from "./pages/PlantPage";
+import PlantPage from "./pages/PlantPage/PlantPage";
+import AllMyPlantPage from "./pages/PlantPage/AllMyPlantPage";
 
 
 import Calendar from "./pages/Calendar/Calendar";
@@ -36,23 +37,14 @@ function App() {
                     <Route path="/signuppage" element={<SignUpPage />} />
                     <Route path="/choiceaipage" element={<Choice_AiPage />} />
                     <Route path="/welcomepage" element={<WelcomePage />} />
-                    <Route path="/allmyrecordpage" element={<AllMyRecordPage />} />
+                    <Route path="//allmyrecordpage" element={<AllMyRecordPage />} />
                     <Route path="/plantpage" element={<PlantPage />} />
+                    <Route path="/allmyplantpage" element={<AllMyPlantPage />} />
                 
-                    <Route
-                        path="/selectsignuppage"
-                        element={<SelectSignUpPage />}
-                    />
-                    <Route
-                        path="/kakaosignuppage"
-                        element={<KakaoSignUpPage />}
-                    />
+                    <Route path="/selectsignuppage" element={<SelectSignUpPage />}/>
+                    <Route path="/kakaosignuppage" element={<KakaoSignUpPage />}/>
                     <Route path="/calendar" element={<Calendar />} />
-
-                    <Route
-                        path="/startchatdapage"
-                        element={<StartChatDaPage />}
-                    />
+                    <Route path="/startchatdapage" element={<StartChatDaPage />} />
                     <Route path="/date/:date" element={<DatePage />} />
                     <Route path="/" element={<Calendar />} />
                 </Routes>

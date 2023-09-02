@@ -1,0 +1,40 @@
+
+.allmyplantsbutton {
+
+  
+    margin-left: 13rem;
+    width: 9rem;
+    height: 3rem;
+    font-family: InknutAntiqua-Regular;
+    font-size: 1rem;
+    padding: 0rem;
+    text-align: center;
+    margin-top: 7rem;
+    background-color: #D9D9D9;
+    border-radius: 0.5rem; /* 더 큰 값으로 조절하여 더 둥글게 만들 수 있습니다 */
+    text-align: center;
+  
+  
+ 
+  
+}
+
+.plantheader {
+  margin-top: 0rem; /* "Day.21" 텍스트와 버튼 사이의 간격 조절 */
+  margin-left: 6rem;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'InknutAntiqua-Bold_t';
+}
+
+.mainplant {
+  /* 이미지 스타일 설정 (원하는 스타일로 수정) */
+  width: 40%;
+  height: 40vh;
+  background-image: url("../images/plant3.jpg");
+  background-size: cover;
+  background-position: center center;
+  margin-left: 6rem;
+  margin-top:0rem;
+}
+
