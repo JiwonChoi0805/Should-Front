@@ -23,7 +23,6 @@ const Header = (props) => {
 export default Header;
 
 const HeaderWrapper = styled.div`
-
     width: 100vw;
     height: 11%;
     position: fixed;
@@ -31,10 +30,10 @@ const HeaderWrapper = styled.div`
     display: flex;
     justify-content: center;
     z-index: 10;
+    top: 0;
     .title {
         font-size: 23px;
         color: white;
         font-family: "Lemon";
     }
 `;
-
