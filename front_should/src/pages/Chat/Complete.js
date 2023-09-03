@@ -8,6 +8,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 
 import addimg from "../images/addimg.png";
 import editimg from "../images/editimg.png";
+import diary_img from "../images/diary_img.png";
 
 const Complete = () => {
     const location = useLocation();
@@ -24,7 +25,9 @@ const Complete = () => {
                 <Header title="2023.08.23.WED" />
                 <KeywordContainer>
                     <div className="keyword_title">Today's Keyword</div>
-                    <div className="keyword_img"></div>
+                    <div className="keyword_img">
+                        <img src={diary_img} />
+                    </div>
                 </KeywordContainer>
                 <DiaryContainer>
                     <div className="diary_title">{diaryData.title}</div>
@@ -82,6 +85,11 @@ const KeywordContainer = styled.div`
         border-radius: 150px;
         background-color: #666;
         margin-top: 10px;
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 150px;
+        }
     }
 `;
 
