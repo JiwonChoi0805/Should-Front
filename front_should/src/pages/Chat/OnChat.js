@@ -69,7 +69,7 @@ const OnChat = () => {
 
     return (
         <Wrapper>
-            <ChatHeader title="2023.08.23.WED" />
+            <ChatHeader title="2023.09.03.SUN" />
             <ChatContainer>
                 <div>
                     {messageHistory.map((message, index) => (

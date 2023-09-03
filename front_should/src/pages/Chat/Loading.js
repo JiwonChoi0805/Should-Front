@@ -20,7 +20,7 @@ const Loading = () => {
                 <img src={loading_background} />
                 <MentContainer>
                     <div className="ment1">
-                        00님! <br /> 오늘 하루도 정말 알차게 보냈군요 아침
+                        user님! <br /> 오늘 하루도 정말 알차게 보냈군요 아침
                         8시부터 나와서 저녁 10시까지 수고 많았어요 :) <br />{" "}
                         얼른 푹 쉬고 좋은 밤 되길 바라요🌃
                     </div>

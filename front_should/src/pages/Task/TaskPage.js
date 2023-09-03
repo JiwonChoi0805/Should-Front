@@ -14,7 +14,7 @@ const TaskPage = () => {
     return (
         <TodoProvider>
             <Wrapper>
-                <Header title="2023.08.23.WED" />
+                <Header title="2023.09.03.SUN" />
                 <Background>
                     <TodoList />
                     {/*<AddTask>

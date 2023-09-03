@@ -23,18 +23,18 @@ const HomePage = () => {
     const gotoTasks = () => {
         navigate("/taskpage");
     };
-    const gotoAllrecord=()=>{
+    const gotoAllrecord = () => {
         navigate("/allmyrecordpage");
     };
 
-    const gotoPlant=()=>{
+    const gotoPlant = () => {
         navigate("/plantpage");
-    }; 
-    
+    };
+
     return (
         <div className="home-page">
             <Wrapper>
-                <HomeHeader title="2023.08.23 WED" />
+                <HomeHeader title="2023.09.03 SUN" />
                 <CategoryWrapper>
                     <Titles>
                         <div className="titleCal">Calendar</div>

@@ -22,7 +22,7 @@ const Complete = () => {
     return (
         <>
             <Wrapper>
-                <Header title="2023.08.23.WED" />
+                <Header title="2023.09.03.SUN" />
                 <KeywordContainer>
                     <div className="keyword_title">Today's Keyword</div>
                     <div className="keyword_img">
