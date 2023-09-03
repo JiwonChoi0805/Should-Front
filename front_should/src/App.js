@@ -17,7 +17,6 @@ import AllMyRecordPage from "./pages/AllMyRecordPage";
 import PlantPage from "./pages/PlantPage/PlantPage";
 import AllMyPlantPage from "./pages/PlantPage/AllMyPlantPage";
 
-
 import Calendar from "./pages/Calendar/Calendar";
 import DatePage from "./pages/Calendar/DatePage";
 
@@ -37,16 +36,28 @@ function App() {
                     <Route path="/signuppage" element={<SignUpPage />} />
                     <Route path="/choiceaipage" element={<Choice_AiPage />} />
                     <Route path="/welcomepage" element={<WelcomePage />} />
-                    <Route path="//allmyrecordpage" element={<AllMyRecordPage />} />
+                    <Route
+                        path="/allmyrecordpage"
+                        element={<AllMyRecordPage />}
+                    />
                     <Route path="/plantpage" element={<PlantPage />} />
-                    <Route path="/allmyplantpage" element={<AllMyPlantPage />} />
-                
-                    <Route path="/selectsignuppage" element={<SelectSignUpPage />}/>
-                    <Route path="/kakaosignuppage" element={<KakaoSignUpPage />}/>
+                    <Route
+                        path="/allmyplantpage"
+                        element={<AllMyPlantPage />}
+                    />
+
+                    <Route
+                        path="/selectsignuppage"
+                        element={<SelectSignUpPage />}
+                    />
+                    <Route
+                        path="/kakaosignuppage"
+                        element={<KakaoSignUpPage />}
+                    />
                     <Route path="/calendar" element={<Calendar />} />
-                    <Route path="/startchatdapage" element={<StartChatDaPage />} />
+                    <Route path="/" element={<StartChatDaPage />} />
                     <Route path="/date/:date" element={<DatePage />} />
-                    <Route path="/" element={<Calendar />} />
+                    {/* <Route path="/" element={<Calendar />} /> */}
                 </Routes>
             </Router>
         </TodoProvider>
